@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "{a..z}{a..z} -exec rm {oo}"| sort
+echo {a..z}{a..z} | tr [[:blank:]] "\n" | sort | grep -v "oo"
