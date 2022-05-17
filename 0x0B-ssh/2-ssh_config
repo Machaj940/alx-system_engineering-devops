@@ -1,2 +1,3 @@
-PasswordAuthentication no
-IdentityFile ~/.ssh/school
+Host 35.171.45.169
+    PasswordAuthentication no
+    IdentityFile ~/.ssh/school
