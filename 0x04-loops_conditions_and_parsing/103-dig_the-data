@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Script that parses apache logs and prints visitor ip & HTTP status code
+
+
+#cat apache-access.log | awk '{ print $1,$9} ' | sort -r | uniq -c
+cat apache-access.log | awk '{ print $1,$9} ' | cut -d: -f1 | sort | uniq -c | sort -n | tail
