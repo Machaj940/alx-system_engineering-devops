@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Write a Bash script that displays the content of the file /etc/passwd
+
+IFS=":"
+while read -r UNAME PSSWD U_ID G_ID UID_INFO HOMDIR COMSHE;
+do
+    echo "The user $UNAME is part of the $G_ID gang, lives in $HOMDIR and rides $COMSHE. $U_ID's place is protected by the passcode $PSSWD, more info about the user here: $UID_INFO"
+done < /etc/passwd
