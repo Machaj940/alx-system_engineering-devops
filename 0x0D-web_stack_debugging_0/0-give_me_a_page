@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 # start apache web server inside docker container 4a73c53fe80b
 
-sudo docker exec 4a73c53fe80b sudo service apache2 start
+#the full command run on terminal: sudo docker exec 4a73c53fe80b sudo service apache2 start
+
+sudo service apache2 start
