@@ -1,0 +1,1 @@
+Install MySQL on both our web-01 and web-02 servers
